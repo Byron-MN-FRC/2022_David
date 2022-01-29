@@ -114,7 +114,7 @@ differentialDrive1.setMaxOutput(1.0);
         if (stick == null) {
             stick = RobotContainer.getInstance().getCommandStick();
         }
-        differentialDrive1.arcadeDrive(stick.getX(), stick.getTwist(), true);
+        differentialDrive1.arcadeDrive(stick.getY(), stick.getTwist(), true);
     }
 
     private void driveTrainMotorConfiguration() {
